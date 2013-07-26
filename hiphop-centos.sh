@@ -175,7 +175,7 @@ cd ${HPHP_SRC}
 if [ ! -d libevent-1.4.14b-stable ]; then
    tar -xzf ${HPHP_TAR}/libevent-1.4.14b-stable.tar.gz
    cd libevent-1.4.14b-stable
-   cp ../hiphop-php/src/third_party/libevent-1.4.14.fb-changes.diff .
+   cp ../hiphop-php/hphp/third_party/libevent-1.4.14.fb-changes.diff .
    patch -p1 < libevent-1.4.14.fb-changes.diff
    ./configure --prefix=${HPHP_ROOT} --enable-static
    make
